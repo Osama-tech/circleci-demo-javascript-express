@@ -124,17 +124,17 @@ workflows:
             - test
             
      #- faild_job
-      - my_job
-      - save_hello_world_output
-      - print_output_file:
-          requires:
-            - save_hello_world_output
+     #- my_job
+     #- save_hello_world_output
+     #- print_output_file:
+      #    requires:
+       #     - save_hello_world_output
             
-      - say-hello
-      - say-name:
-          requires:
-            - say-hello
+     # - say-hello
+     # - say-name:
+      #    requires:
+       #     - say-hello
             
-  env-vars:
-    jobs:
-      - say-name
+ # env-vars:
+  #  jobs:
+   #   - say-name
