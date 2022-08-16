@@ -106,6 +106,7 @@ jobs:
       - restore_cache:
           keys:
             - "npm-packeges"
+      - npm audit fix
       - run: npm audit
 
 
